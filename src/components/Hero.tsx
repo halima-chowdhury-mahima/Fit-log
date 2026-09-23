@@ -14,9 +14,9 @@ export default function Hero() {
           </p>
 
           <h1 className="text-4xl font-black uppercase leading-[0.95] tracking-tight text-white md:text-5xl lg:text-6xl">
-            TRAIN WITH INTENT.
+            TRAIN WITH INTENT.LOG
             <br />
-            LOG EVERY SET.
+             EVERY SET.
           </h1>
 
           <p className="mt-5 max-w-130 text-sm leading-6 text-fit-muted md:text-base">
@@ -37,7 +37,7 @@ export default function Hero() {
         {/* Right Side Banner */}
         <div className="relative min-h-70 md:min-h-90 lg:min-h-100">
           <Image
-            src="/Images/banner.png"
+            src="/images/banner.png"
             alt="FitLog workout banner"
             fill
             priority

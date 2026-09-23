@@ -31,7 +31,7 @@ export default function Navbar() {
           className="flex items-center gap-2"
         >
           <Image
-            src="/Images/logo.png"
+            src="/images/logo.png"
             alt="FitLog logo"
             width={27}
             height={27}
