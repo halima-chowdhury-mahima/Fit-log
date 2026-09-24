@@ -1,4 +1,4 @@
-# FitLog — Workout Library & Training Planner
+# 🏋️ FitLog — Workout Library & Training Planner
 
 FitLog is a modern, responsive workout management application built with **Next.js, TypeScript, and Tailwind CSS**. It allows users to explore a structured workout library, view detailed exercise information, build a personalized daily workout plan, save exercises for later, and track workout metrics from one clean interface.
 
@@ -6,7 +6,7 @@ The project focuses on responsive UI design, dynamic routing, state management, 
 
 ---
 
-## Live Demo
+## 🚀 Live Demo
 
 **Live Website:**  
 [View FitLog Live](https://fit-log-chi.vercel.app/)
@@ -26,7 +26,7 @@ The application also calculates workout statistics such as total exercises, work
 
 ---
 
-## Key Features
+## ✨ Key Features
 
 - Browse a complete workout library
 - View detailed information for individual workouts
@@ -48,7 +48,7 @@ The application also calculates workout statistics such as total exercises, work
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 | Technology | Purpose |
 | --- | --- |
