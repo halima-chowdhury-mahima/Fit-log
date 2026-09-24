@@ -1,23 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Clock, Flame, Star } from "lucide-react";
+import type { Workout } from "@/types/workout";
 
 type WorkoutCardProps = {
-  workout: {
-    id: number | string;
-    name: string;
-    image: string;
-    categories: string[];
-    equipment: string;
-    duration: number;
-    calories: number;
-    rating: number;
-  };
+  workout: Workout;
 };
 
 export default function WorkoutCard({ workout }: WorkoutCardProps) {
   return (
-    <Link href={`/workouts/${workout.id}`} className="block h-full">
+    <Link href={`/workout/${workout.id}`} className="block h-full">
       <div
         className="
           group h-full overflow-hidden rounded-xl
@@ -34,42 +26,26 @@ export default function WorkoutCard({ workout }: WorkoutCardProps) {
             src={workout.image}
             alt={workout.name}
             fill
-            className="
-              object-cover
-              transition-transform duration-500
-              group-hover:scale-105
-            "
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
 
         {/* Card Content */}
         <div className="p-5">
-          {/* Categories */}
+          {/* Muscle Groups */}
           <div className="mb-6 flex flex-wrap gap-3">
-            {workout.categories.map((category) => (
+            {workout.muscleGroups.map((group) => (
               <span
-                key={category}
-                className="
-                  rounded-full bg-fit-lime
-                  px-4 py-2
-                  text-xs font-black uppercase
-                  text-black
-                "
+                key={group}
+                className="rounded-full bg-fit-lime px-4 py-2 text-xs font-black uppercase text-black"
               >
-                {category}
+                {group}
               </span>
             ))}
           </div>
 
           {/* Workout Name */}
-          <h2
-            className="
-              text-xl font-black uppercase
-              tracking-tight text-white
-              transition-colors duration-300
-              group-hover:text-fit-lime
-            "
-          >
+          <h2 className="text-xl font-black uppercase tracking-tight text-white">
             {workout.name}
           </h2>
 
@@ -81,7 +57,7 @@ export default function WorkoutCard({ workout }: WorkoutCardProps) {
           {/* Divider */}
           <div className="my-6 border-t border-fit-border" />
 
-          {/* Stats */}
+          {/* Workout Stats */}
           <div className="flex flex-wrap items-center gap-6 text-sm text-fit-muted">
             {/* Duration */}
             <div className="flex items-center gap-2">
@@ -92,7 +68,7 @@ export default function WorkoutCard({ workout }: WorkoutCardProps) {
             {/* Calories */}
             <div className="flex items-center gap-2">
               <Flame size={19} className="text-fit-lime" />
-              <span>{workout.calories} kcal</span>
+              <span>{workout.caloriesBurned} kcal</span>
             </div>
 
             {/* Rating */}
