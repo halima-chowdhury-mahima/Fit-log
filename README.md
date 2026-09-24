@@ -1,50 +1,135 @@
-# 🏋️ FitLog
+# FitLog — Workout Library & Training Planner
 
-FitLog is a modern workout library and daily workout planning application built with Next.js and TypeScript.
+FitLog is a modern, responsive workout management application built with **Next.js, TypeScript, and Tailwind CSS**. It allows users to explore a structured workout library, view detailed exercise information, build a personalized daily workout plan, save exercises for later, and track workout metrics from one clean interface.
 
-Users can browse different workouts, view detailed exercise information, add workouts to today's plan, save workouts for later, and track their daily workout progress.
+The project focuses on responsive UI design, dynamic routing, state management, reusable components, and a smooth user experience across mobile, tablet, and desktop devices.
 
-## 🚀 Live Demo
+---
 
-Live Link: Add your Vercel live link here
+## Live Demo
 
-## 🔗 GitHub Repository
+**Live Website:**  
+[View FitLog Live](https://fit-log-chi.vercel.app/)
 
-GitHub Repository: Add your repository link here
+**GitHub Repository:**  
+[FitLog Repository](https://github.com/halima-chowdhury-mahima/Fit-log)
 
-## 🛠️ Technologies Used
+---
 
-- Next.js
-- TypeScript
-- Tailwind CSS
-- React Context API
-- React Hot Toast
-- Lucide React
-- LocalStorage
+## Project Overview
 
-## ✨ Key Features
+FitLog is designed as a simple but practical fitness companion.
 
-- Browse 12 workouts fetched from the FitLog API
-- View detailed workout information using dynamic routes
-- Add up to 5 workouts to Today's Plan
+Users can browse a collection of workouts, inspect individual exercise details, add workouts to **Today's Plan**, save exercises for later, and manage their selected workouts from the **My Plan** page.
+
+The application also calculates workout statistics such as total exercises, workout duration, and calories based on the user's current plan.
+
+---
+
+## Key Features
+
+- Browse a complete workout library
+- View detailed information for individual workouts
+- Dynamic workout details pages
+- Add exercises to Today's Plan
 - Save workouts for later
-- Track total exercises, workout minutes, and calories
-- Sort Today's Plan and Saved workouts by duration, calories, or rating
+- Live Plan and Saved counters in the navbar
+- View total exercises, minutes, and calories
+- Switch between Today's Plan and Saved workouts
 - Mark planned workouts as completed
-- Remove workouts from Today's Plan or Saved list
-- Workout plan and saved data persist using localStorage
-- Responsive design for mobile, tablet, and desktop
-- Custom loading state and 404 page
+- Remove workouts from the plan
+- Sort workouts by duration, calories, or rating
+- Toast notifications for user actions
+- Loading states while workout data is being fetched
+- Custom 404 page for invalid routes
+- Responsive layout for mobile, tablet, and desktop
+- Smooth navigation using Next.js App Router
+- Persistent workout data using Local Storage
 
-## 🌐 API
+---
 
-FitLog API:
+## Technologies Used
 
-https://api.abcz.workers.dev/api/fitlog
+| Technology | Purpose |
+| --- | --- |
+| Next.js | Application framework |
+| React | Component-based UI |
+| TypeScript | Type-safe development |
+| Tailwind CSS | Styling and responsive design |
+| Next.js App Router | Routing and navigation |
+| Lucide React | Icons |
+| Local Storage | Persistent plan and saved data |
+| Vercel | Deployment |
 
-## 📦 Installation
+---
 
-Clone the repository:
+## Main Pages
 
-```bash
-git clone YOUR_REPOSITORY_URL
+### Home
+
+The Home page contains the main Hero section and Workout Library.
+
+Users can:
+
+- Browse available workouts
+- View workout categories
+- Check duration, calories, and ratings
+- Navigate to individual workout details
+- Sort workouts based on different criteria
+
+---
+
+### Workout Details
+
+Each workout has its own dynamic details page.
+
+The page displays:
+
+- Workout image
+- Workout title
+- Description
+- Categories
+- Equipment
+- Difficulty
+- Sets
+- Repetitions
+- Duration
+- Calories
+- Rating
+- Step-by-step instructions
+
+Users can also:
+
+- Add the workout to Today's Plan
+- Save the workout for later
+
+---
+
+### My Plan
+
+The My Plan page acts as the workout management dashboard.
+
+It includes:
+
+- Today's Plan tab
+- Saved tab
+- Exercise count
+- Total workout minutes
+- Total calories
+- View Details action
+- Mark as Done action
+- Remove workout action
+- Empty state when no workouts are available
+
+---
+
+## Workout Planning
+
+FitLog dynamically updates the user's workout information when exercises are added or removed.
+
+The dashboard calculates:
+
+```text
+Exercises = Total workouts in Today's Plan
+Minutes   = Total duration of planned workouts
+Calories  = Total estimated calories of planned workouts
