@@ -13,10 +13,13 @@ export default function Hero() {
     WORKOUT LIBRARY
   </p>
 
-  <h1 className="max-w-135 text-[48px] font-black uppercase leading-[0.92] tracking-tight text-white sm:text-[54px] md:text-[58px] lg:text-[62px]">
-  TRAIN WITH INTENT. LOG
-  <br />
-  EVERY SET.
+  <h1 className="text-[38px] font-black uppercase leading-[0.95] tracking-tight text-white sm:text-[42px] md:text-[46px] lg:text-[48px]">
+  <span className="block whitespace-nowrap">
+    TRAIN WITH INTENT. LOG
+  </span>
+  <span className="block">
+    EVERY SET.
+  </span>
 </h1>
 
 <p className="mt-5 max-w-130 text-sm leading-6 text-fit-muted md:text-base">
